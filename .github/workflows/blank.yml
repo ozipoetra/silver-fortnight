@@ -28,8 +28,7 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           # git config pull.rebase false
-          rm * -r
-          hugo new site quickstart
+          ls -al
           cd quickstart
           git init
           git submodule add https://github.com/apvarun/blist-hugo-theme.git themes/blist
