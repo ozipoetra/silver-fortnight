@@ -23,15 +23,12 @@ jobs:
           hugo-version: '0.103.1'
           # extended: true
 
-      - name: Build
-        run: |
-          hugo new site quickstart
-
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git config pull.rebase false
+          hugo new site quickstart
           cd quickstart
           git init
           git submodule add https://github.com/apvarun/blist-hugo-theme.git themes/blist
