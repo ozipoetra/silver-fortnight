@@ -29,12 +29,14 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git config pull.rebase false
           ls -al
+          rm * -r
+          hugo new site quickstart
           cd quickstart
           git init
           git branch -m main
           git submodule add https://github.com/apvarun/blist-hugo-theme.git themes/blist
           git add .
-          # git commit -m "Add changes test"
+          git commit -m "Add changes testa"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
