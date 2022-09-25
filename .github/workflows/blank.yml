@@ -32,7 +32,7 @@ jobs:
           # hugo new site quickstart
           cp quickstart/* .. -r
           rm themes -r
-          git init
+          # git init
           git submodule add https://github.com/apvarun/blist-hugo-theme.git themes/blist
           git add .
           git commit -m "Add changes testa"
