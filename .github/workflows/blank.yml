@@ -34,7 +34,7 @@ jobs:
           git branch -m main
           git submodule add https://github.com/apvarun/blist-hugo-theme.git themes/blist
           git add .
-          git commit -m "Add changes test"
+          # git commit -m "Add changes test"
 
       - name: Push changes
         uses: ad-m/github-push-action@master
