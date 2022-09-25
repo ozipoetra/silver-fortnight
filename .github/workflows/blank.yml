@@ -31,6 +31,7 @@ jobs:
           ls -al
           cd quickstart
           git init
+          git branch -m main
           git submodule add https://github.com/apvarun/blist-hugo-theme.git themes/blist
           git add .
           git commit -m "Add changes test"
